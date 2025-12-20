@@ -32,10 +32,10 @@ g++ -std=c++17 csv_parser.cpp -o csv_parser
 1. Read CSV & Write Sorted CSV
 2. Exit
 
-Enter choice: 1
-Enter input CSV file name: data.csv
-Enter output CSV file name: sorted.csv
-Enter column index (0-based): 1
+- Enter choice: 1
+- Enter input CSV file name: data.csv
+- Enter output CSV file name: sorted.csv
+- Enter column index (0-based): 1
 
 
 ## 📁 Output
