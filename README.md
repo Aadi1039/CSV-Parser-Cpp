@@ -1,47 +1,47 @@
-# 📊 CSV Parser in C++
+# CSV Parser in C++
 
-A menu-driven CSV parser written in C++ that efficiently reads, writes, and sorts large CSV files (100MB+) using external sorting.
-
----
-
-## ✨ Features
-- 📂 Read large CSV files safely
-- ✍️ Write sorted output to a new CSV file
-- 🔢 Sort by any column (0-based index)
-- 🧹 Automatic deletion of temporary chunk files
-- ⚡ Memory-efficient external sorting
-- 🖥️ Menu-driven CLI interface
-- 🍎 Compatible with macOS and VS Code
+This is a memory-efficient CSV sorting tool written in C++.  
+It can sort very large CSV files using an external merge sort algorithm.
 
 ---
 
-## 🛠️ Prerequisites
-- C++ compiler (`g++`)
-- macOS / Linux
-- VS Code (recommended)
+## Features
+- Works with large CSV files (100MB+)
+- Correct external merge sort (no data loss)
+- Automatically detects numeric and string columns
+- Simple user input based interface
 
 ---
 
-## ⚙️ Compile
+## How to Build
+
 ```bash
-g++ -std=c++17 csv_parser.cpp -o csv_parser
+g++ -std=c++17 main.cpp adi_cpp_parser.cpp -o csv_sorter
 ```
+## How to Run
+```bash
+./csv_sorter
+```
+## Usage
+After running, the program will ask:
+```bash
+Enter input CSV file name:
+Enter column index (0-based):
+Enter output CSV file name:
+```
+## Example:
+crime.csv
+2
+sorted.csv
 
-## ▶️ Example Usage
- CSV Parser Menu 
-1. Read CSV & Write Sorted CSV
-2. Exit
+## Project Structure
+- adi_cpp_parser.h      -> CSV parser library
+- adi_cpp_parser.cpp    -> Implementation
+- main.cpp              -> Program entry point
+- csv_project_old.cpp   -> Old deprecated implementation
 
-- Enter choice: 1
-- Enter input CSV file name: data.csv
-- Enter output CSV file name: sorted.csv
-- Enter column index (0-based): 1
+## Note
 
+csv_project_old.cpp is kept only for reference.
+The new implementation fixes merge and sorting bugs.
 
-## 📁 Output
-- ✅ Sorted CSV file is created (e.g., `sorted.csv`)
-- 🧹 Temporary chunk files are deleted automatically
-- 📄 Output can be opened directly in VS Code
-
-## 🚀 Project Highlight
-Developed a memory-efficient CSV parser in C++ capable of reading, writing, and sorting large CSV files (100MB+) using external sorting techniques.
